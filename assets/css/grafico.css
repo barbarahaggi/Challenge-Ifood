@@ -1,0 +1,218 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #800c06;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede scroll horizontal */
+}
+
+main {
+    max-width: 100vw; /* Limita o conteúdo à largura da tela */
+    overflow-x: hidden; /* Evita que o conteúdo ultrapasse a largura da tela */
+}
+
+img {
+    max-width: 100%;
+    width: 100px;
+    padding: 10px;
+}
+
+.main-conteiner {
+    margin: 40px;
+    background-color: white;
+    border: solid white;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.relatorio {
+    font-size: 30px;
+    padding-left: 40px;
+    margin-top: 20px;
+    align-self: flex-start;
+    color: white;
+}
+
+.bg-danger {
+    background-color: #760b05 !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.nav-tabs {
+    margin-bottom: 30px; /* Adiciona espaço abaixo das abas */
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #760b05;
+    color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px; /* Adiciona espaço entre os cards */
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Ajustes para centralizar os gráficos e espaçar os elementos */
+.row {
+    justify-content: center;; /* Centraliza os elementos da row */
+}
+
+.container-fluid {
+    padding: 0 15px;
+}
+
+.card-body {
+    width: 100%; /* Garante que o card use toda a largura possível */
+    max-width: 100%; /* Limita a largura máxima do card */
+    text-align: center; /* Centraliza o texto */
+    background-color: #e0e0e0;
+}
+
+canvas {
+    width: 100% !important; /* Garante que os gráficos ocupem toda a largura disponível */
+    height: auto !important; /* Mantém a proporção correta */
+    max-height: 400px;
+    background-color: #e0e0e0;
+    
+}
+
+
+/* Dashboard estilizada */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #e0e0e0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 34px;
+    display: inline-block;
+    background-color: #f9f9f9;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+
+.green-text {
+    color: green;
+}
+
+.red-text {
+    color: red;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .main-conteiner {
+        padding: 20px;
+    }
+    
+    
+    .col-md-8, .col-md-4 {
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    canvas {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 400px;
+        background-color: #e0e0e0;
+    }
+    
+    .main-conteiner {
+        margin: 0px;
+        background-color: #800C06;
+        border: solid #800C06;
+        border-radius: 20px;
+        padding-top: 10px;
+    }
+    
+    .relatorio {
+        font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        color: white;
+    }
+
+    .dashboard {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+    }
+
+    .dashboard .card {
+        width: 90%; /* Faz com que os cards ocupem quase toda a largura */
+        margin-bottom: 20px; /* Espaçamento entre os cards */
+    }
+
+    .card {
+        flex: 1;
+        margin: 0 0;
+        margin-bottom: 10px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+
+    .icon {
+        font-size: 34px;
+        display: inline-block;
+        background-color: #f9f9f9;
+        width: 60px;
+        height: 60px;
+        border-radius: 60%;
+        line-height: 60px;
+        margin-bottom: 25px;
+        align-self: center;
+    }
+}
