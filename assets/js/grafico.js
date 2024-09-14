@@ -1,4 +1,3 @@
-// Dados para o gráfico de média/mês
 const mediaMesData = {
     labels: ['Março', 'Abril', 'Maio', 'Junho'],
     datasets: [{
@@ -33,14 +32,13 @@ const mediaMesData = {
     }]
 };
 
-// Configuração do gráfico de média/mês
 const ctxMediaMes = document.getElementById('chartMediaMes').getContext('2d');
 const chartMediaMes = new Chart(ctxMediaMes, {
     type: 'line',
     data: mediaMesData,
     options: {
-        responsive: true, // Gráficos responsivos
-        maintainAspectRatio: false, // Permite que a proporção seja ajustada ao container
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
             y: {
                 beginAtZero: true
@@ -49,7 +47,6 @@ const chartMediaMes = new Chart(ctxMediaMes, {
     }
 });
 
-// Dados para o gráfico de pratos mais pedidos
 const pratosMaisPedidosData = {
     labels: ['Temaki Salmão', 'Temaki Atum', 'Temaki Skin', 'Temaki Pescada'],
     datasets: [{
@@ -60,13 +57,13 @@ const pratosMaisPedidosData = {
     }]
 };
 
-// Configuração do gráfico de pratos mais pedidos
+
 const ctxPratosMaisPedidos = document.getElementById('chartPratosMaisPedidos').getContext('2d');
 const chartPratosMaisPedidos = new Chart(ctxPratosMaisPedidos, {
     type: 'pie',
     data: pratosMaisPedidosData,
     options: {
-        responsive: true, // Gráfico responsivo
-        maintainAspectRatio: false, // Permite ajustar a proporção ao container
+        responsive: true,
+        maintainAspectRatio: false,
     }
 });
