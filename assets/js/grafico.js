@@ -5,8 +5,8 @@ const mediaMesData = {
         label: 'Média',
         data: [14, 20, 19, 10],
         borderColor: 'black',
-        borderWidth: 1,
-        pointRadius: 4,
+        borderWidth: 2,
+        pointRadius: 5,
         pointBackgroundColor: 'green',
         backgroundColor: 'green',
         fill: false
@@ -15,8 +15,8 @@ const mediaMesData = {
         label: 'Pedidos',
         data: [20, 33, 23, 36],
         borderColor: 'black',
-        borderWidth: 1,
-        pointRadius: 4,
+        borderWidth: 2,
+        pointRadius: 5,
         pointBackgroundColor: 'yellow',
         backgroundColor: 'yellow',
         fill: false
@@ -25,8 +25,8 @@ const mediaMesData = {
         label: 'Cancelamentos',
         data: [10, 8, 6, 4],
         borderColor: 'black',
-        borderWidth: 1,
-        pointRadius: 4,
+        borderWidth: 2,
+        pointRadius: 5,
         pointBackgroundColor: 'red',
         backgroundColor: 'red',
         fill: false
@@ -55,7 +55,7 @@ const pratosMaisPedidosData = {
     datasets: [{
         label: 'Pedidos',
         data: [30, 24, 13, 28],
-        backgroundColor: ['#DC3545', '#FFC107', '#FD7E14', '#333333'],
+        backgroundColor: ['#E60000', '#FFC107', '#FD7E14', '#00420B'],
         hoverOffset: 4
     }]
 };

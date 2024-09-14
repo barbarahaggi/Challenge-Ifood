@@ -1,3 +1,23 @@
+
+(function () {
+	'use strict'
+
+	var forms = document.querySelectorAll('.needs-validation')
+
+	Array.prototype.slice.call(forms)
+		.forEach(function (form) {
+			form.addEventListener('submit', function (event) {
+				if (!form.checkValidity()) {
+					event.preventDefault()
+					event.stopPropagation()
+				}
+
+				form.classList.add('was-validated')
+			}, false)
+		})
+})()
+
+
 // Selecionar os elementos
 const popup = document.getElementById('popup');
 const openPopupBtn = document.getElementById('openPopup');
