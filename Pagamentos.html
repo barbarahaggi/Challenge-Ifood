@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Pagamento</title>
+    <!-- Link para o Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+        <img src="ifood_logo.png" alt="iFood Logo" width="100">
+    </a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Transações</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Pagamentos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Relatórios</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Conteúdo principal -->
+<div class="container mt-5">
+    <h1>Histórico de pagamento</h1>
+    <div class="text-right mb-3">
+        <button class="btn download-btn">Baixar todos</button>
+    </div>
+    
+    <!-- Tabela de pagamentos -->
+    <div class="table-container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>ID de Pagamento</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                    <th>Baixar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>A1B2C3</td>
+                    <td>R$5.800,00</td>
+                    <td>01/06/2024</td>
+                    <td class="status-pendente">Pendente</td>
+                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>D4E5F6</td>
+                    <td>R$12.050,00</td>
+                    <td>05/06/2024</td>
+                    <td class="status-concluido">Concluído</td>
+                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>G7H8I9</td>
+                    <td>R$7.500,00</td>
+                    <td>09/06/2024</td>
+                    <td class="status-pendente">Pendente</td>
+                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>M4N5O6</td>
+                    <td>R$4.450,00</td>
+                    <td>17/06/2024</td>
+                    <td class="status-pendente">Pendente</td>
+                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>J1K2L3</td>
+                    <td>R$3.200,00</td>
+                    <td>13/05/2024</td>
+                    <td class="status-concluido">Concluído</td>
+                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>M4N5O6</td>
+                    <td>R$4.450,00</td>
+                    <td>17/05/2024</td>
+                    <td class="status-concluido">Concluído</td>
+                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>P7Q8R9</td>
+                    <td>R$11.000,00</td>
+                    <td>21/05/2024</td>
+                    <td class="status-concluido">Concluído</td>
+                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>S1T2U3</td>
+                    <td>R$8.500,00</td>
+                    <td>25/05/2024</td>
+                    <td class="status-concluido">Concluído</td>
+                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Link para o Bootstrap JS e FontAwesome -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>

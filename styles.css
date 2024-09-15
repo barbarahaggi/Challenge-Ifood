@@ -1,0 +1,37 @@
+body {
+    background-color: #8B0000; /* Cor de fundo principal */
+    color: white;
+}
+
+.navbar {
+    background-color: #400000;
+}
+
+h1 {
+    margin-top: 30px;
+    color: white;
+}
+
+.table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.download-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.status-pendente {
+    color: #ffc107;
+}
+
+.status-concluido {
+    color: #28a745;
+}
