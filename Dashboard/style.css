@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #800c06;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+img {
+    max-width: 100%;
+    width: 100px;
+    padding: 10px;
+}
+
+.bg-danger {
+    background-color: #760b05 !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.nav-tabs {
+    margin-bottom: 30px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #760b05;
+    color: white;
+}
+
+.custom-card {
+    background: linear-gradient(135deg, #800C06, #1A0201);
+    border-radius: 15px; 
+    border: 2px solid white;
+    height: 130px;
+}
+
+.card-title{
+    font-size: 26px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.card-text{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco{
+    margin-top: 50px;
+    margin-left: 70px;
+    gap: 30px;
+}
+
+.relatorio .custom-card {
+    width: 400px;
+    height: max-content; 
+    margin-left: 40px;
+ float: right inline-start;
+}
+
+.calendario{
+    display: flex;
+    padding: 10px;
+    color: rgb(88, 87, 87);
+    margin-top: 20px;
+    border-radius: 20px;
+    border-color: none;
+}
+
+.bloco-calendario{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+

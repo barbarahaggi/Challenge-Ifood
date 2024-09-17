@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #800c06;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+img {
+    max-width: 100%;
+    width: 100px;
+    padding: 10px;
+}
+
+.bg-danger {
+    background-color: #760b05 !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.nav-tabs {
+    margin-bottom: 30px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #760b05;
+    color: white;
+}
+
+.calendario{
+    display: flex;
+    padding: 10px;
+    color: rgb(88, 87, 87);
+    margin-top: 20px;
+    border-radius: 20px;
+    border-color: none;
+}
+
+.bloco-calendario{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+.container{
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;
+    margin-top: 40px;
+   margin-bottom: 20px;
+}
+
+.historico{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nome{
+    color: black;
+    font-weight: bold;
+}
+
+.data{
+    color: #33363F;
+}
+
+.valor{
+    color: #33363F;
+    font-size: 20px;
+}
+
+
+  .detalhes {
+    display: none; /* Escondido por padrão */
+    background-color: #f1f1f1;
+    padding: 100px;
+    
+    
+
+  }
+
+  .mostrar {
+    display: grid; /* Mostra a div quando a classe é adicionada */
+    background-color: white;
+    
+  }
+
+
+  .botao{
+    background-color: #760b05;
+    color: white;
+    border-color: #760b05;
+    border-radius: 10px;
+  }
+
+
+  @media (max-width: 768px) {
+    img {
+        width: 60px; /* Tamanho menor para mobile */
+    }
+
+    .container {
+        padding: 10px; /* Reduzir padding no mobile */
+        border-radius: 0px;
+    }
+
+    .calendario {
+        padding: 5px; /* Menor padding no mobile */
+        margin-top: 10px;
+    }
+
+    .historico {
+        flex-direction: column; /* Colocar itens em coluna */
+    }
+
+    .botao {
+        width: 100%; /* Botão ocupa 100% da largura no mobile */
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .seta{
+        margin-top: 10px;
+    }
+}
+   
