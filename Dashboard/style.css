@@ -29,7 +29,22 @@ img {
     color: white;
 }
 
-.custom-card {
+.calendario{
+    display: flex;
+    padding: 10px;
+    color: rgb(88, 87, 87);
+    margin-top: 20px;
+    border-radius: 20px;
+    border-color: none;
+}
+
+.bloco-calendario{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+ .custom-card {
     background: linear-gradient(135deg, #800C06, #1A0201);
     border-radius: 15px; 
     border: 2px solid white;
@@ -50,6 +65,7 @@ img {
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    color: white;
 }
 
 .three{
@@ -64,26 +80,37 @@ img {
     gap: 30px;
 }
 
-.relatorio .custom-card {
-    width: 400px;
-    height: max-content; 
-    margin-left: 40px;
- float: right inline-start;
+
+.info-box {
+    background-color: #8B0000;
+    border: 1px solid #5D0000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.calendario{
-    display: flex;
-    padding: 10px;
-    color: rgb(88, 87, 87);
-    margin-top: 20px;
-    border-radius: 20px;
-    border-color: none;
+/* .info-box h3 {
+    font-size: 1.5rem;
 }
 
-.bloco-calendario{
-    display: flex;
-    justify-content: end;
-    margin-right: 50px;
+.info-box p {
+    font-size: 1.8rem;
+    font-weight: bold;
+} */
+
+.chart-box, .report-box {
+    background-color: #5D0000;
+    border: 1px solid #8B0000;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
 }
 
+.mini-chart {
+    background-color: #8B0000;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+} 
 
