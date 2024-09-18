@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histórico de Pagamento</title>
-    <!-- Link para o Bootstrap CSS -->
+    
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Link para o arquivo CSS externo -->
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="#">
         <img src="ifood_logo.png" alt="iFood Logo" width="100">
@@ -33,16 +32,14 @@
         </ul>
     </div>
 </nav>
-
-<!-- Conteúdo principal -->
 <div class="container mt-5">
     <h1>Histórico de pagamento</h1>
     <div class="text-right mb-3">
-        <button class="btn download-btn">Baixar todos</button>
+        <button class="btn download-btn btn-primary">Baixar todos</button>
     </div>
     
     <!-- Tabela de pagamentos -->
-    <div class="table-container">
+    <div class="table-container table-responsive">
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -51,73 +48,64 @@
                     <th>Valor</th>
                     <th>Data</th>
                     <th>Status</th>
-                    <th>Baixar</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><input type="checkbox"></td>
-                    <td>A1B2C3</td>
-                    <td>R$5.800,00</td>
-                    <td>01/06/2024</td>
-                    <td class="status-pendente">Pendente</td>
-                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                    <td data-label="Selecionar"><input type="checkbox"></td>
+                    <td data-label="ID de Pagamento">A1B2C3</td>
+                    <td data-label="Valor">R$5.800,00</td>
+                    <td data-label="Data">01/06/2024</td>
+                    <td data-label="Status" class="status-pendente">Pendente</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"></td>
-                    <td>D4E5F6</td>
-                    <td>R$12.050,00</td>
-                    <td>05/06/2024</td>
-                    <td class="status-concluido">Concluído</td>
-                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                    <td data-label="Selecionar"><input type="checkbox"></td>
+                    <td data-label="ID de Pagamento">D4E5F6</td>
+                    <td data-label="Valor">R$12.050,00</td>
+                    <td data-label="Data">05/06/2024</td>
+                    <td data-label="Status" class="status-concluido">Concluído</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"></td>
-                    <td>G7H8I9</td>
-                    <td>R$7.500,00</td>
-                    <td>09/06/2024</td>
-                    <td class="status-pendente">Pendente</td>
-                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                    <td data-label="Selecionar"><input type="checkbox"></td>
+                    <td data-label="ID de Pagamento">G7H8I9</td>
+                    <td data-label="Valor">R$7.500,00</td>
+                    <td data-label="Data">09/06/2024</td>
+                    <td data-label="Status" class="status-pendente">Pendente</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"></td>
-                    <td>M4N5O6</td>
-                    <td>R$4.450,00</td>
-                    <td>17/06/2024</td>
-                    <td class="status-pendente">Pendente</td>
-                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                    <td data-label="Selecionar"><input type="checkbox"></td>
+                    <td data-label="ID de Pagamento">M4N5O6</td>
+                    <td data-label="Valor">R$4.450,00</td>
+                    <td data-label="Data">17/06/2024</td>
+                    <td data-label="Status" class="status-pendente">Pendente</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"></td>
-                    <td>J1K2L3</td>
-                    <td>R$3.200,00</td>
-                    <td>13/05/2024</td>
-                    <td class="status-concluido">Concluído</td>
-                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                    <td data-label="Selecionar"><input type="checkbox"></td>
+                    <td data-label="ID de Pagamento">J1K2L3</td>
+                    <td data-label="Valor">R$3.200,00</td>
+                    <td data-label="Data">13/05/2024</td>
+                    <td data-label="Status" class="status-concluido">Concluído</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"></td>
-                    <td>M4N5O6</td>
-                    <td>R$4.450,00</td>
-                    <td>17/05/2024</td>
-                    <td class="status-concluido">Concluído</td>
-                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                    <td data-label="Selecionar"><input type="checkbox"></td>
+                    <td data-label="ID de Pagamento">M4N5O6</td>
+                    <td data-label="Valor">R$4.450,00</td>
+                    <td data-label="Data">17/05/2024</td>
+                    <td data-label="Status" class="status-concluido">Concluído</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"></td>
-                    <td>P7Q8R9</td>
-                    <td>R$11.000,00</td>
-                    <td>21/05/2024</td>
-                    <td class="status-concluido">Concluído</td>
-                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                    <td data-label="Selecionar"><input type="checkbox"></td>
+                    <td data-label="ID de Pagamento">P7Q8R9</td>
+                    <td data-label="Valor">R$11.000,00</td>
+                    <td data-label="Data">21/05/2024</td>
+                    <td data-label="Status" class="status-concluido">Concluído</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"></td>
-                    <td>S1T2U3</td>
-                    <td>R$8.500,00</td>
-                    <td>25/05/2024</td>
-                    <td class="status-concluido">Concluído</td>
-                    <td><a href="#"><i class="fas fa-download"></i></a></td>
+                    <td data-label="Selecionar"><input type="checkbox"></td>
+                    <td data-label="ID de Pagamento">S1T2U3</td>
+                    <td data-label="Valor">R$8.500,00</td>
+                    <td data-label="Data">25/05/2024</td>
+                    <td data-label="Status" class="status-concluido">Concluído</td>
                 </tr>
             </tbody>
         </table>
