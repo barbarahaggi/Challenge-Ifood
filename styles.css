@@ -1,5 +1,5 @@
 body {
-    background-color: #8B0000; /* Cor de fundo principal */
+    background-color: #8B0000;
     color: white;
 }
 
@@ -34,4 +34,32 @@ h1 {
 
 .status-concluido {
     color: #28a745;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand img {
+        width: 80px;
+    }
+    .table thead {
+        display: none;
+    }
+    .table tbody tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .table tbody tr td {
+        display: block;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+    .table tbody tr td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
 }
