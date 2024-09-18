@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histórico de Pagamento</title>
-    
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
 
 <nav class="navbar bg-danger navbar-expand-lg navbar-light bg-transparent" data-bs-theme="dark">
     <div class="container-fluid">
-        <img id="logo" src="/Dashboard/assets/Icon_app_Ifood_-removebg-preview 1.png" alt="logo-ifood">
-        <a class="navbar-brand f2-3 text-white" href="#"></a>
+        <img id="logo" src="./assets/image/logo2.png" alt="logo-ifood">
+        <a class="navbar-brand text-white" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-lg-auto ms-auto"> <!-- Adicionado ms-auto aqui -->
+            <ul class="navbar-nav mx-lg-auto">
                 <li class="nav-item me-3">
                     <a class="nav-link text-white" aria-current="page" href="#">Dashboard</a>
                 </li>
@@ -33,7 +33,6 @@
                     <a class="nav-link text-white" href="#">Relatórios</a>
                 </li>
             </ul>
-            <!-- Ícone SVG que aparece apenas no mobile (dentro do collapse) -->
             <ul class="navbar-nav d-lg-none ms-auto">
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">
@@ -47,7 +46,6 @@
             </ul>
         </div>
     </div>
-    <!-- Ícone SVG que aparece apenas em telas grandes -->
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-right me-5 d-none d-lg-block" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
         <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
@@ -59,7 +57,6 @@
         <button class="btn download-btn btn-primary">Baixar todos</button>
     </div>
     
-    <!-- Tabela de pagamentos -->
     <div class="table-container table-responsive">
         <table class="table table-bordered">
             <thead>
@@ -133,7 +130,6 @@
     </div>
 </div>
 
-<!-- Link para o Bootstrap JS e FontAwesome -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
